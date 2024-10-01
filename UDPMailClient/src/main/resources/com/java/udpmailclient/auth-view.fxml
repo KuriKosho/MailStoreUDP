@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:controller="com.java.udpmailclient.Controller.LoginController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="123.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txt_mail" layoutX="15.0" layoutY="28.0" prefHeight="25.0" prefWidth="211.0" promptText="Enter your email" />
+      <Button fx:id="btn_login" layoutX="14.0" layoutY="74.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="25.0" prefWidth="94.0" text="Login" textFill="#0be71a" />
+      <Button fx:id="btnRegister" layoutX="131.0" layoutY="74.0" mnemonicParsing="false" onAction="#registerAction" prefHeight="25.0" prefWidth="94.0" text="Register" textFill="#2d38df" />
+   </children>
+</Pane>

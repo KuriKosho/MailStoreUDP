@@ -1,0 +1,5 @@
+FROM:admin2@gmail.com
+TO:admin@gmail.com
+SUBJECT:ADMIN
+CONTENT:ADMIN
+TIME:01/10/2024 0900

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.java.udpmailclient.Controller.UDPController">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #DCDDDC;">
+               <children>
+                  <VBox prefHeight="400.0" prefWidth="197.0">
+                     <children>
+                        <Pane prefHeight="63.0" prefWidth="198.0">
+                           <children>
+                              <Label fx:id="lb_your_email" layoutX="14.0" layoutY="23.0" prefHeight="17.0" prefWidth="165.0" text="admin@gmail.cmom" />
+                              <Button fx:id="btn_new" layoutX="144.0" layoutY="18.0" mnemonicParsing="false" onAction="#newMailAction" text="New" textFill="#0953e7" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="340.0" prefWidth="198.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="5.0" text="Email" />
+                              <ScrollPane fx:id="scPane" hbarPolicy="NEVER" layoutX="10.0" layoutY="31.0" prefHeight="307.0" prefWidth="187.0">
+                                 <content>
+                                    <VBox fx:id="vbox" prefHeight="302.0" prefWidth="184.0" />
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane prefHeight="400.0" prefWidth="406.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="65.0" text="FROM" />
+                  <Label layoutX="14.0" layoutY="46.0" prefHeight="17.0" prefWidth="65.0" text="TO" />
+                  <Label layoutX="14.0" layoutY="81.0" prefHeight="17.0" prefWidth="65.0" text="SUBJECT" />
+                  <Label layoutX="14.0" layoutY="114.0" prefHeight="17.0" prefWidth="65.0" text="CONTENT" />
+                  <Label fx:id="lb_from_mail" layoutX="79.0" layoutY="14.0" prefHeight="17.0" prefWidth="294.0" text="admin@gmail.com">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt_to_mail" layoutX="79.0" layoutY="42.0" prefHeight="25.0" prefWidth="294.0" />
+                  <TextField fx:id="txt_subject_mail" layoutX="79.0" layoutY="77.0" prefHeight="25.0" prefWidth="294.0" />
+                  <TextArea fx:id="txt_content_mail" layoutX="14.0" layoutY="140.0" prefHeight="200.0" prefWidth="363.0" />
+                  <Button fx:id="btn_send" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#sendMailAction" prefHeight="25.0" prefWidth="172.0" text="SEND" textFill="#0bdc20" />
+                  <Button fx:id="btn_cancel" layoutX="205.0" layoutY="361.0" mnemonicParsing="false" onAction="#cancelMailAction" prefHeight="25.0" prefWidth="172.0" text="CANCEL" textFill="#c40505" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
